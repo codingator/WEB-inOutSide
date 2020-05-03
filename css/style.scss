@@ -1,0 +1,90 @@
+// Bingo card stylesheet inspired by One More Thing
+
+$background-color: #2a2724;
+$border-color: #84766b;
+$border: 3px solid $border-color;
+$primary-color: #cf6a32;
+$header-color: #ede4cc;
+
+body {
+  box-sizing: border-box;
+  background: $background-color;
+  color: $primary-color;
+  //font-family: "TF2 Build", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  user-select: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+main {
+  width: 33rem;
+  margin: 33px auto;
+  border: $border;
+  border-radius: 15px;
+  background: transparent;
+}
+
+h1 {
+  padding-top: 1rem;
+  color: $header-color;
+  font-size: 2rem;
+  text-align: center;
+  span {
+    display: inline-block;
+    width: 5.7rem;
+    height: 5.7rem;
+    font-size: 2.7em;
+    // font-size note 1:
+    //   Because words like “extinguishes” are just too damn long.
+    // font-size note 2:
+    //   “Schadenfreude”, “Environmental” and “Unexplainable” are even longer.
+  }
+}
+
+.grid {
+  display: flex; // Yo alles flex wazzup?
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 30rem;
+  height: 30rem;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  width: 5.7rem;
+  height: 5.7rem;
+  border: $border;
+  border-radius: 15px;
+  background: $primary-color;
+  input {
+    display: none;
+    &:checked + .mark {
+      background: transparent;
+      color: $background-color;
+    }
+  }
+  .mark {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 5.34rem; // Magic number
+    height: 5.34rem;
+    padding: .2rem;
+    border-radius: 12px;
+    background: $background-color;
+    font-size: .9em;
+    text-align: center;
+  }
+}
+
+small {
+  display: block;
+  padding: 1em;
+  text-align: center;
+}
