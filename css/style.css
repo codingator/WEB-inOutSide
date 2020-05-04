@@ -1,8 +1,12 @@
+html {
+  font-size: 16px;
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #2a2724;
-  color: #cf6a32;
+  background: #ffffff;
+  color: #c47348;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -22,7 +26,7 @@ main {
   margin: 33px auto;
   border: 3px solid #84766b;
   border-radius: 15px;
-  background: transparent;
+  background: #b3a295;
 }
 
 h1 {
@@ -60,7 +64,7 @@ label {
   height: 5.7rem;
   border: 3px solid #84766b;
   border-radius: 15px;
-  background: #cf6a32;
+  background: #c47348;
 }
 
 label input {
@@ -69,7 +73,7 @@ label input {
 
 label input:checked + .mark {
   background: transparent;
-  color: #2a2724;
+  color: #ffffff;
 }
 
 label .mark {
@@ -87,7 +91,7 @@ label .mark {
   height: 5.34rem;
   padding: .2rem;
   border-radius: 12px;
-  background: #2a2724;
+  background: #ffffff;
   font-size: .9em;
   text-align: center;
 }
@@ -96,5 +100,10 @@ small {
   display: block;
   padding: 1em;
   text-align: center;
+}
+
+.addthis_inline_share_toolbox_44sq {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

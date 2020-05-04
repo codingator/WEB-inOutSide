@@ -1,10 +1,15 @@
 // Bingo card stylesheet inspired by One More Thing
 
-$background-color: #2a2724;
+$background-color: #ffffff;
+$main-color: #b3a295;
 $border-color: #84766b;
 $border: 3px solid $border-color;
-$primary-color: #cf6a32;
+$primary-color: #c47348;
 $header-color: #ede4cc;
+
+html {
+  font-size: 16px;
+}
 
 body {
   box-sizing: border-box;
@@ -26,7 +31,7 @@ main {
   margin: 33px auto;
   border: $border;
   border-radius: 15px;
-  background: transparent;
+  background: $main-color;
 }
 
 h1 {
@@ -87,4 +92,9 @@ small {
   display: block;
   padding: 1em;
   text-align: center;
+}
+
+.addthis_inline_share_toolbox_44sq {
+  text-align: center;
+  margin-bottom: 1rem;
 }
