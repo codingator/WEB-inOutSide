@@ -1,142 +1,65 @@
 var lines = [
-    // Credits to ster, gamingmedley, darkness3560, JettTheMedic, and many other redditors
-    "Teams have been vote scrambled",
-    "The game glitches",
-    "Backcap",
-    "One of the teams is not playing the game",
-    "You cannot understand a player (language or voice)",
-    "Actual balanced and fun game",
-    "Point gets capped or pushed with 5+ speed",
-    "Strange item gets upgraded",
-    "You get a taunt kill",
-    "You got auto balanced",
-    "Taunt after kill",
-    "Top score (#1)",
-    "You get 3+ domination",
-    "You bleed",
-    "You got ubered (or kritz'd or quicked, etc.)",
-    "Someone shoots at uber",
-    "Trade",
-    "Mad in chat",
-    "Someone did something unexplain-able",
-    "Good voice chatter",
-    "Bad voice chatter",
-    "Someone has |Trade.tf in name",
-    "Cheater",
-    "Someone gets a taunt kill",
-    "Someone talks funny in chat",
-    "Environ-mental kill or suicide (train, cliff)",
-    "Someone asks for a trade",
-    "Someone is somewhere where they are not supposed to be",
-    "Someone got votekicked",
-    "Lime painted cosmetic",
-    "Pink painted cosmetic",
-    "Someone goes the wrong way",
-    "Badly renamed weapon",
-    "Gibus + Pyrovision",
-    "Someone needs a Dispenser here (spam)",
-    "Unusual",
-    "Earbuds",
-    "Australium",
-    "Frying Pan",
-    "Caribou",
-    "Demoman or Soldier suicide",
-    "Heavy Princess or (any class) Unicorn",
-    "The attacking team cannot cap 1 point",
-    "'A celebrity' gets on the server",
-    "Your team waits to push until overtime",
-    "Your team gets spawn camped",
-    "Your team has 4+ dominators",
-    "Teammate really thinks you're a Spy",
-    "3+ Players idle in spawn",
-    "Offensive name",
-    "Meme name",
-    "2+ Gibuses on your team",
-    "Your team cannot kill the Sentry",
-    "Lost or won at final point",
-    "The other team gets spawn camped",
-    "The other team has 3+ dominations",
-    "Schaden-freude (taunt)",
-    "Conga",
-    "Rock Paper Scissors",
-    "Kazotsky Kick",
-    "Mannrobics",
-    "3+ Scouts in your team",
-    "Scout bonks to nowhere",
-    "Bonked Scout is trapped by Sentry",
-    "You got milked",
-    "Crocket kills 3+ players",
-    "Cow Mangler 5000",
-    "Soldier deploys Buff Banner",
-    "Rocket Jumper",
-    "3+ Pyros in your team",
-    "Phlog Mmmph killed 3+ players",
-    "Pyro airblast kills a player (cliff, deflect or fall dmg)",
-    "Pyro actually extinguishes teammates",
-    "Pyro never extinguishes teammates",
-    "Backburner",
-    "3+ Demomen in your team",
-    "Demoknight",
-    "Demopan",
-    "Double Donk!",
-    "3+ Heavies in your team",
-    "Heavy gets pushed by the cart",
-    "Heavy revs up for too long without shooting",
-    "Friendly Hoovy",
-    "You pick up a Sandvich",
-    "3+ Engineers in your team",
-    "Frontier Justice + Gunslinger",
-    "2+ Engineers, but no Teleporters",
-    "2+ Mini Sentries in same area",
-    "Badly placed Sentries",
-    "Sentry in most common spot for map",
-    "Rancho Relaxo away from nest",
-    "Eureka Effect teleport",
-    "3+ Medics in your team",
-    "No Medic on your team",
-    "Medic heals enemy Spy",
-    "Medic drops uber",
-    "Lone ubered Medic",
-    "Medic + Medic combo",
-    "Medic only heals pocket",
-    "Medic uses uber in setup",
-    "3+ Snipers in your team",
-    "2+ Snipers at same spot",
-    "Sniper penetration kill (server sfx)",
-    "Huntsman",
-    "3+ Spies in your team",
-    "Spy misses 2 stabs in a row",
-    "Spy thinks he is fooling everyone",
-    "Well hidden Box Trot Spy",
-  ];
-  
-  // Fisher-Yates Shuffle
-  var shuffle = function(array) {
-    var m = array.length, t, i;
-    // While there remain elements to shuffle
-    while (m) {
-      // Pick a remaining element
-      i = Math.floor(Math.random() * m--);
-      // And swap it with the current element.
-      t = array[m];
-      array[m] = array[i];
-      array[i] = t;
-    }
-    return array;
-  };
-  // Did I just steal this code from Wikipedia, or something?
-  
-  var insertToCard = function(array) {
-    var slot = 25;
-    while (slot) {
-      $("label:nth-child(" + slot + ") .mark span").text(array[slot + 1]);
-      slot--;
-    }
-  };
-  
-  $(document).ready(function() {
-    var shuffledLines = shuffle(lines);
-    insertToCard(shuffledLines); // #hellaswag
-    $("#seed").text(Math.floor(Math.random() * 100000000)); // TODO
+  // Credits to ster, gamingmedley, darkness3560, JettTheMedic, and many other redditors
+  "5일 이상 집에서 안나가도 크게 불편한 것이 없다",
+  "같이 밤 새면서 노는 친구가 있다",
+  "개파 종파 올참",
+  "누군가 먼저 '뭐해?'라고 메시지가 온 적이 많다",
+  "단톡에서 말해도 반응이 없을까봐 썼다 지운 적이 많다",
+  "단톡에서 본인이 말 안해도 단톡이 잘 돌아간다",
+  "대리출석 해 줄 친구 있음",
+  "미팅 나가서 귓속말 게임해 봄",
+  "빼빼로데이, 화이트데이, 발렌타인데이에 받아본 적이 없다",
+  "시험 공부는 친구들이랑 학교에서",
+  "시험 기간에 술 모임 가져 봄",
+  "아는 술게임 5가지 이상",
+  "옷장에 옷의 스타일이 4종류 이상이다",
+  "워터파크를 가본 적 있다",
+  "이성이 포함된 술자리를 연 5회 이상 한다",
+  "인싸들이 즐겁게 노는것을 보고 내가 그래도 쟤들보다는 낫다고 생각한 적이 있다",
+  "자기소개서 특기에 쓸 말이 딱히 없다",
+  "정말 친한 친구가 3명 이상 있다",
+  "축제를 여러사람과 가본 적 있다",
+  "친구가 집에와서 자고 간 적이 있다",
+  "친한 이성(형,오빠,동생)가 10명 이상 있다",
+  "하루에 한번 쯤은 친구에게 전화가 걸려온다",
+  "학식에서 혼밥한 적 없음",
+  "한 달에 술 약속, 밥 약속 2회 이상 있다",
+  "한번 이상 연애를 해봤다",
+];
+
+// Fisher-Yates Shuffle
+var shuffle = function (array) {
+  var m = array.length + 1,
+    t,
+    i;
+  // While there remain elements to shuffle
+  while (m) {
+    // Pick a remaining element
+    i = m--;
+    // And swap it with the current element.
+    t = array[m - 1];
+    array[m] = array[i];
+    array[i] = t;
+  }
+  return array;
+};
+// Did I just steal this code from Wikipedia, or something?
+
+var insertToCard = function (array) {
+  var slot = 25;
+  while (slot) {
+    $("label:nth-child(" + slot + ") .mark span").text(array[slot + 1]);
+    slot--;
+  }
+};
+
+$(document).ready(function () {
+  var shuffledLines = shuffle(lines);
+  insertToCard(shuffledLines); // #hellaswag
+});
+
+$(function () {
+  $("label input").on("click", function () {
+    $("count").text($("label input:checked + .mark").length);
   });
-  
+});

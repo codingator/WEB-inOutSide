@@ -4,21 +4,21 @@ html {
 
 body {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background: #ffffff;
   color: #c47348;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 *,
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 main {
@@ -49,10 +49,10 @@ h1 span {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 30rem;
   height: 30rem;
   margin: 0 auto;
@@ -71,7 +71,7 @@ label input {
   display: none;
 }
 
-label input:checked + .mark {
+label input:checked+.mark {
   background: transparent;
   color: #ffffff;
 }
@@ -82,11 +82,11 @@ label .mark {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 5.34rem;
   height: 5.34rem;
   padding: .2rem;
@@ -96,14 +96,80 @@ label .mark {
   text-align: center;
 }
 
-small {
-  display: block;
-  padding: 1em;
-  text-align: center;
-}
-
 .addthis_inline_share_toolbox_44sq {
   text-align: center;
   margin-bottom: 1rem;
 }
+
+.navbar {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  max-width: 46rem;
+  margin: 0.5rem auto 2rem auto;
+}
+
+.navbar-nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.navbar-default .navbar-nav li a {
+  color: #000000;
+}
+
+.comment__section {
+  margin: 2rem;
+}
+
+.count {
+  display: block;
+  width: 100%;
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.count span {
+  font-size: 1.1rem;
+  color: #ede4cc;
+}
+
+.result__panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.result__panel div {
+  margin: auto;
+}
+
+.result__panel div span {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.result__panel div span:nth-child(2) {
+  font-size: 0.9rem;
+  color: #ede4cc;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+
+  .navbar-brand {
+    font-size: 2rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -39,6 +39,7 @@ h1 {
   color: $header-color;
   font-size: 2rem;
   text-align: center;
+
   span {
     display: inline-block;
     width: 5.7rem;
@@ -52,7 +53,7 @@ h1 {
 }
 
 .grid {
-  display: flex; // Yo alles flex wazzup?
+  display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   width: 30rem;
@@ -67,13 +68,16 @@ label {
   border: $border;
   border-radius: 15px;
   background: $primary-color;
+
   input {
     display: none;
-    &:checked + .mark {
+
+    &:checked+.mark {
       background: transparent;
       color: $background-color;
     }
   }
+
   .mark {
     display: flex;
     flex-direction: column;
@@ -88,13 +92,73 @@ label {
   }
 }
 
-small {
-  display: block;
-  padding: 1em;
-  text-align: center;
-}
-
 .addthis_inline_share_toolbox_44sq {
   text-align: center;
   margin-bottom: 1rem;
+}
+
+.navbar {
+  background-color: $background-color;
+  border-color: $background-color;
+  max-width: 46rem;
+  margin: 0.5rem auto 2rem auto;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-default .navbar-nav li a {
+  color: #000000;
+}
+
+.comment__section {
+  margin: 2rem;
+}
+
+.count {
+  display: block;
+  width: 100%;
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffffff;
+
+  span {
+    font-size: 1.1rem;
+    color: $header-color;
+  }
+}
+
+.result__panel {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1rem;
+
+  div {
+    margin: auto;
+
+    span {
+      font-size: 1rem;
+      font-weight: bold;
+      color: $background-color;
+    }
+
+    span:nth-child(2) {
+      font-size: 0.9rem;
+      color: $header-color;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+
+  .navbar-brand {
+    font-size: 2rem;
+  }
 }
