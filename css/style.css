@@ -173,4 +173,8 @@ label .mark {
     font-size: 2rem;
   }
 }
+
+aside .row__banner_ad {
+  margin: 0 auto;
+}
 /*# sourceMappingURL=style.css.map */
