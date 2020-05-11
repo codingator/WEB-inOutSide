@@ -128,7 +128,7 @@ label .mark {
   width: 100%;
   margin: 2rem auto;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #ffffff;
 }
@@ -152,13 +152,13 @@ label .mark {
 }
 
 .result__panel div span {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: #ffffff;
 }
 
 .result__panel div span:nth-child(2) {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #ede4cc;
 }
 
