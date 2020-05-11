@@ -9,6 +9,8 @@ $header-color: #ede4cc;
 
 html {
   font-size: 16px;
+  max-width: 60rem;
+  margin: auto;
 }
 
 body {
@@ -99,7 +101,7 @@ label {
 .navbar {
   background-color: $background-color;
   border-color: $background-color;
-  max-width: 60rem;
+  max-width: 100%;
   min-width: 40rem;
   margin: 0.5rem auto 2rem auto;
 }
