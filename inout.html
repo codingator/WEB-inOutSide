@@ -19,50 +19,7 @@
     <script data-ad-client="ca-pub-7105125393845886" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/index.html">Bingo</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active">
-              <a href="#">인싸테스트 <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="dropdown">
-              <a
-                href="#"
-                class="dropdown-toggle"
-                data-toggle="dropdown"
-                role="button"
-                aria-expanded="false"
-                >다른 테스트 <span class="caret"></span
-              ></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="/index.html">메인화면</a></li>
-                <li><a href="#">추가 중</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container-fluid -->
-    </nav>
+    <nav include-html="/include/nav_inc.html"></nav>
     <article>
       <main>
         <header>
@@ -222,13 +179,20 @@
         <div class="addthis_inline_share_toolbox_44sq"></div>
       </section>
       <aside>
-        <ins
-          class="kakao_ad_area"
-          style="display: none;"
-          data-ad-unit="DAN-1hvbj8mwla15x"
-          data-ad-width="728"
-          data-ad-height="90"
-        ></ins>
+        <div class="row__banner__ad">
+          <ins
+            class="kakao_ad_area"
+            style="display: none;"
+            data-ad-unit="DAN-1hvbj8mwla15x"
+            data-ad-width="728"
+            data-ad-height="90"
+          ></ins>
+        </div>
+        <script
+          type="text/javascript"
+          src="//t1.daumcdn.net/kas/static/ba.min.js"
+          async
+        ></script>
       </aside>
       <!-- 댓글 모듈[Disqus] -->
       <section class="comment__section">
@@ -266,6 +230,7 @@
     <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bingoplane.js"></script>
+    <script src="js/includeHTML.js"></script>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script
       type="text/javascript"

@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
     <title>빙고테스트[메인화면]</title>
     <!-- 부트스트랩 -->
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/main.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
     <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
@@ -26,43 +26,7 @@
     <nav include-html="/include/nav_inc.html"></nav>
     <article>
       <div class="container">
-        <div id="products" class="row list-group">
-          <!--single panel-->
-          <a href="/inout.html">
-            <!-- 인싸테스트 -->
-            <div class="item col-xs-4 col-lg-4">
-              <div class="thumbnail">
-                <img
-                  class="group list-group-image"
-                  src="images/inSSa_400x250.PNG"
-                  alt=""
-                />
-                <div class="caption">
-                  <h4 class="group inner list-group-item-heading">
-                    인싸테스트
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!--single panel-->
-          <a href="#">
-            <!-- Empty -->
-            <div class="item col-xs-4 col-lg-4">
-              <div class="thumbnail">
-                <img
-                  class="group list-group-image"
-                  src="images/empty_400x250.PNG"
-                  alt=""
-                />
-                <div class="caption">
-                  <h4 class="group inner list-group-item-heading">
-                    준비 중
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </a>
+          
         </div>
       </div>
       <!-- SNS 공유 모듈[AddThis] -->
@@ -80,12 +44,12 @@
             data-ad-height="90"
           ></ins>
         </div>
-        <script
-          type="text/javascript"
-          src="//t1.daumcdn.net/kas/static/ba.min.js"
-          async
-        ></script>
       </aside>
+      <script
+        type="text/javascript"
+        src="//t1.daumcdn.net/kas/static/ba.min.js"
+        async
+      ></script>
       <!-- 댓글 모듈[Disqus] -->
       <section class="comment__section">
         <div id="disqus_thread"></div>
@@ -121,6 +85,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bingoplane.js"></script>
     <script src="js/includeHTML.js"></script>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script
@@ -142,17 +107,5 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script src="js/main.js"></script>
   </body>
 </html>
-
-<!--
-Copyright (c) 2020 by Ajay Patel (https://codepen.io/ajaypatelaj/pen/zIBjJ)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
--->
