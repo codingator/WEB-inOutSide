@@ -114,6 +114,16 @@ label {
   color: #000000;
 }
 
+.navbar-brand {
+  padding: 0 15px;
+
+  img {
+    width: 3.15rem;
+    height: 3.15rem;
+
+  }
+}
+
 .comment__section {
   margin: 2rem;
 }
@@ -169,4 +179,5 @@ label {
 aside .row__banner__ad {
   margin: 0 auto;
   text-align: center;
+  width: 100%;
 }

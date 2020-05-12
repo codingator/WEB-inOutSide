@@ -121,6 +121,15 @@ label .mark {
   color: #000000;
 }
 
+.navbar-brand {
+  padding: 0 15px;
+}
+
+.navbar-brand img {
+  width: 3.15rem;
+  height: 3.15rem;
+}
+
 .comment__section {
   margin: 2rem;
 }
@@ -177,5 +186,6 @@ label .mark {
 aside .row__banner__ad {
   margin: 0 auto;
   text-align: center;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
